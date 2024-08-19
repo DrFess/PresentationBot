@@ -23,5 +23,10 @@ async def create_presentation(callback: CallbackQuery, state: FSMContext):
 async def get_images(message: Message, state: FSMContext):
     await state.set_state(PresentationSteps.images_step)
     await message.answer(f'{message.photo}')
-    await message.bot.download(file=message.photo[-1].file_id, destination='1.jpg')
+    await message.bot.download(file=message.photo[-1].file_id, destination='images/1.jpg')
     pprint(message.photo)
+
+
+@router.message(PresentationSteps.images_step)
+async def give_presentation(message: Message, state: FSMContext):
+    pass

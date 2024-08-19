@@ -14,7 +14,7 @@ router = Router()
 
 @router.message(Command(commands=['start']))
 async def command_start_handler(message: Message):
-    await message.answer('Привет, я - бот для создания презентаций с картинками.')
+    await message.answer('Привет, я - бот для создания презентаций с картинками. Для начала нажми /menu')
 
 
 async def main():
