@@ -15,7 +15,7 @@ pillow==10.4.0
 pip==24.1.2
 pydantic-core==2.20.1
 pydantic==2.8.2
-python-pptx==0.6.23
+python-pptx==1.0.2
 setuptools==65.5.1
 typing-extensions==4.12.2
 wheel==0.38.4
